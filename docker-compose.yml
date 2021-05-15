@@ -1,0 +1,29 @@
+version: '3.8'
+services:
+
+  app:
+    ports:
+      - 8080:8080
+    links:
+      - mongodb
+    depends_on:
+      - mongodb
+    networks:
+      - backend
+
+  mongodb:
+    image: mongo:latest
+    volumes:
+      - data:/var/lib/mongodb/data
+    container_name: "mongodb"
+    ports:
+      - 27017:27017
+    networks:
+      - backend
+
+networks:
+  backend:
+
+volumes:
+  data:
+    external: true
