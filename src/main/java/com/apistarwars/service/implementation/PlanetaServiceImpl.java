@@ -59,8 +59,8 @@ public class PlanetaServiceImpl implements PlanetaService {
     }
 
     @Override
-    public Planeta adicionar(PlanetaDto planeta) {
-        var novoPlaneta = new Planeta(planeta.getId() == null ? null : planeta.getId(), planeta.getNome(), planeta.getClima(), planeta.getTerreno(),
+    public Planeta adicionar(PlanetaDto planeta, String id) {
+        var novoPlaneta = new Planeta(id, planeta.getNome(), planeta.getClima(), planeta.getTerreno(),
                 obterQtdAparicaoFilme(planeta.getNome()));
         logger.info("Adicionado novo planeta: {}", planetaRepository.save(novoPlaneta));
         return novoPlaneta;

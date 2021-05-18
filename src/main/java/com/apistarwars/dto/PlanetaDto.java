@@ -11,7 +11,6 @@ import javax.validation.constraints.NotBlank;
 @NoArgsConstructor
 public class PlanetaDto {
 
-    private String id;
     @NotBlank
     private String nome;
     @NotBlank

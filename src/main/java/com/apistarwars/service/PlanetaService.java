@@ -11,7 +11,7 @@ import java.util.Optional;
 public interface PlanetaService {
 
     String obterQtdAparicaoFilme(String nomePlaneta);
-    Planeta adicionar(PlanetaDto planeta);
+    Planeta adicionar(PlanetaDto planeta, String id);
     List<Planeta> listar();
     List<Planeta> buscarPorNome(String nome);
     Optional<Planeta> buscarPorId(String id);

@@ -28,6 +28,7 @@ dependencies {
 	implementation group: 'org.apache.httpcomponents', name: 'httpclient', version: '4.5.13'
 	implementation group: 'org.hibernate', name: 'hibernate-validator', version: '7.0.1.Final'
 	implementation "io.reactivex.rxjava3:rxjava:3.0.13-RC4"
+	implementation group: 'org.springdoc', name: 'springdoc-openapi-ui', version: '1.5.8'
 	testImplementation group: 'junit', name: 'junit', version: '4.13.2'
 	compileOnly 'org.projectlombok:lombok'
 	annotationProcessor 'org.projectlombok:lombok'
