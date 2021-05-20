@@ -17,7 +17,7 @@ O projeto utiliza o banco de dados MongoDB.
 
 ## 1. Requisitos e Configurações
 
-- Para executar o projeto é necessária a instalação do Docker (caso queira executar o projeto pelo mesmo).
+- Para executar o projeto é necessária a instalação do Java JDK 11 e o Docker (caso queira executar o projeto pelo mesmo).
 
 ## 2. Executando o Projeto
 
