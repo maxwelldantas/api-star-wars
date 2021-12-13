@@ -43,5 +43,5 @@ Caso tenha instalado o Docker e queira executar pelo mesmo, execute o comando ab
 $ docker-compose up
 ```
 
-Por fim a URL para acessar o projeto em um navegador será [http://localhost:8080/api-ui](http://localhost:8080/api-ui)
+Para acessar o projeto em um navegador será [http://localhost:8080/api-ui](http://localhost:8080/api-ui)
 com acesso direto a documentação do projeto e endpoints criados utilizando o Swagger OpenAPI.

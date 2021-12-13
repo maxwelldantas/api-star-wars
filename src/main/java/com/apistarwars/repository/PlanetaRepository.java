@@ -10,7 +10,7 @@ import java.util.List;
 @Repository
 public interface PlanetaRepository extends MongoRepository<Planeta, String> {
 
-    List<Planeta> findByNomeIgnoreCase(String nome);
+    List<Planeta> findByNomeIgnoreCaseContaining(String nome);
     @Override
     void deleteById(@NonNull String id);
 }
