@@ -75,7 +75,7 @@ public class PlanetaServiceImpl implements PlanetaService {
 
     @Override
     public List<Planeta> buscarPorNome(String nome) {
-        var planeta = planetaRepository.findByNomeIgnoreCase(nome);
+        var planeta = planetaRepository.findByNomeIgnoreCaseContaining(nome);
         logger.info("Listagem de planetas obtidos pelo nome: {}", planeta);
         return planeta;
     }
